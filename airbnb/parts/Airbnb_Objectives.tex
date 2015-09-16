@@ -1,0 +1,268 @@
+\section{Objectives} % (fold)
+\label{sec:objectives}
+The objectives of a company can be explained top-down on three different levels: the strategic, the tactical and the operative level. The strategic level is the highest level. It contains the {\bf future strategy or vision} of the company. The tactical level on the other hand describes the actual steps in terms of {\bf application of methods, principles and other approaches} that are needed to achieve this vision. Placed on the lower end of the spectrum the operative level is describing the needs for successfully doing the {\bf day-to-day business operations} \citep{Boundless14}.
+\vspace{0.2cm}
+
+Following we will list the potential business objectives of Airbnb on each of those levels to understand what are their {\bf short-term and long-term goals} and derive from this findings what they will possibly use to measure their success. The mind maps will show the hierarchy of the objectives 
+
+\subsection{Strategic Level} % (fold)
+\label{sub:strategic_lvl}
+On the strategic level Airbnb tries to:
+	\begin{enumerate}
+    	\item establish a trusted peer-to-peer marketplace, that is
+        \item available to and usable by a worldwide community, which
+        \item enlist unique, attractive accommodations and
+        \item provide a convenient booking experience 
+        \item leading to loyal, satisfied customers. 
+    \end{enumerate}
+
+% subsection strategic_lvl (end)
+
+\subsection{Tactical and Operative Level} % (fold)
+\label{sub:tactical_operative_lvl}
+To establish a {\bf trusted peer-to-peer (p2p) marketplace} Airbnb has to build a verified, trusted relationship between the owner and the renter, who have never met in person before. 
+\vspace{0.2cm}
+
+Make the service {\bf usable and available to a worldwide community} requires not only operating the web-based system on a global scale but also to adapt to local requirements as needed e.g. tax/legal regulations and translation of the web interface. Additionally it has to make the web-based system known to a larger web community to participate on the network effect. That is the more user are using the service the more content will be available that in fact will attract additional users to sign-up.
+\vspace{0.2cm}
+
+An USP of the service is the huge list of {\bf unique, attractive accommodations} that are offered by the marketplace. Airbnb has to build up long-term partnerships with owners of extraordinary places to have them available on their platform only. Additionally those special locations have to be advertised as such and placed on an own separated place on the homepage, so that they can be found and recognized with ease. Making sure that the potential customer figures out the special features of such an accommodation at a glance will also help to promote them. 
+\vspace{0.2cm}
+
+Nevertheless a large part of the user community just wants to figure out a nice place to stay in an {\bf easy, convenient way} based on user preferences or current location. Providing a mobile application is therefore a key to reach this objective. Based on the mobile device the web-based service could figure out the exact location of its user and provide a list of nearby accommodations.
+% subsection tactical_operative_lvl (end)
+
+\subsection{Hierarchy of Objectives} % (fold)
+\label{sec:hierarchy_objectives}
+The following mind maps visualise the hierarchy of objectives. The black node represents strategic levels, the blue nodes tactical levels and the green nodes operative levels.
+
+\vspace*{\fill}
+%OWEISS: It is very important to know, that the angle between the nodes is 60° in standard settings. 
+
+\begin{figure}
+\centering
+\makebox[\textwidth][c]{
+\begin{tikzpicture}
+  \path[mindmap,grow cyclic, every node/.style=concept, concept color=black,text=white, 
+    level 1/.append style={concept color=blue,level distance=130,sibling angle=60,},
+    level 2/.append style={concept color=green!50!black,level distance=90,sibling angle=45},]
+    node[] {Establish a trusted p2p marketplace}
+    [clockwise from=0]
+    child[] {
+      node[] {System of reviews like eBay}
+      [clockwise from=45]
+      child[] { node[] {Five star rating system} }
+      child[] { node[] {Ratings are performed by former visitors} }
+      child[] { node[] {Reviewing reminder (dashboard, mail)} }
+    }  
+    child[] {
+      node[] {Guarantee for hosts} 
+      [clockwise from=-37.5]
+      child[] { node[] {Property is covered for up to 1,000,000 dollars} }
+      child[] { node[] {Reputable insurance} }
+    }  
+        child[] {
+      node[] {Identification}
+      [clockwise from=-75]
+      child[] { node[] {Facebook, LinkedIn} }
+      child[] { node[] {Drivers License} }
+      child[] { node[] {Phone number, Email address} }
+    }  
+        child[] {
+      node[] {24/7 worldwide customer support}      
+      [clockwise from=-135]
+      child[] { node[] {E-Mail} }
+      child[] { node[] {FAQ} }
+      child[] { node[] {Phone} }
+    }  
+        child[] {
+      node[] {Secure payment}      
+      [clockwise from=-195]
+      child[] { node[] {Payment and Payout through Airbnb} }
+      child[] { node[] {Validation of payment accounts} }
+      child[] { node[] {Payment after check-in} }
+    }
+        child[] {
+      node[] {Safe messaging system}      
+      [clockwise from=-255]
+      child[] { node[] {Own system} }
+      child[] { node[] {Flag suspicious content} }
+      child[] { node[] {E-Mail contact for safety complains} }
+    };
+\end{tikzpicture}
+}
+\caption{Mind map: Establish a trusted p2p marketplace}
+\end{figure}
+\vspace*{\fill}
+
+\vspace*{\fill}
+%OWEISS: It is very important to know, that the angle between the childs is 60° in standard settings (perfect for 6 childs). 
+\begin{figure}
+\centering
+\makebox[\textwidth][c]{
+\begin{tikzpicture}
+  \path[mindmap,grow cyclic, every node/.style=concept, concept color=black,text=white, 
+    level 1/.append style={concept color=blue,level distance=130,sibling angle=72,},
+    level 2/.append style={concept color=green!50!black,level distance=90,sibling angle=45},]
+    node[] {Available to and used by a worldwide community}
+    [clockwise from=90]
+    child[] {
+      node[] {Increase number of active users with social media}
+      [clockwise from=157.5]
+      child[] { node[] {Sharing flats on Social networks} }
+      child[] { node[] {Invite friends to earn money} }  
+      child[] { node[] {Automatic listing on Craiglist} }  
+      child[] { node[] {Newsletter} }  
+    }  
+    child[] {
+      node[] {Own blog for community} 
+      [clockwise from=40.5]
+      child[] { node[] {Promotion and news by Airbnb} }
+      child[] { node[] {Experiences by travelers} }
+    }  
+        child[] {
+      node[] {Scalable application}
+      [clockwise from=-9]
+      child[] { node[] {Monitoring server status} }
+      child[] { node[] {Fixing server downtime} }
+      child[] { node[] {Adding new resources on demand} }
+    }  
+        child[] {
+      node[] {Internationalization and localisation}      
+      [clockwise from=-81]
+      child[] { node[] {World-wide offers on main page} }
+      child[] { node[] {International insurance company} }
+      child[] { node[] {Find nearby places with mobile app} }
+    }  
+        child[] {
+      node[] {Open Source technologies}      
+      [clockwise from=-175.5]
+      child[] { node[] {Publish on GitHub} }
+      child[] { node[] {Diminish concerns about privacy} }      
+    }; 
+\end{tikzpicture}
+}
+\caption{Mind map: Available to and used by a worldwide community}
+\end{figure}
+\vspace*{\fill}
+\vspace*{\fill}
+%strategic objective 3 
+\begin{figure}
+\centering
+\makebox[\textwidth][c]{
+\begin{tikzpicture}
+  \path[mindmap,grow cyclic, every node/.style=concept, concept color=black,text=white, 
+    level 1/.append style={concept color=blue,level distance=120,sibling angle=90,},
+    level 2/.append style={concept color=green!50!black,level distance=100,sibling angle=45},]
+    node[] {enlist unique, attractive accommodations}
+        [clockwise from=45]
+    child[] {node[] {Unique architecture}
+      [clockwise from=130]
+          child[] { node[] {Castles} }
+          child[] { node[] {Trains} }  
+          child[] { node[] {Geodesic Domes} }  
+      	  child[] { node[] {Lighthouses} }
+      }
+    child[] { node[] {Thematic places}   
+      [clockwise from=-10]
+      	  child [] { node[]  {Homes of Famous Authors}}
+          child [] { node[]  {LOHAS}}
+          child [] { node[]  {Historical places}}
+      }
+    child[] {node[] {Unique design}   
+    	[clockwise from=-80]
+          child[] { node[] {Mirrored house} }
+      	  child[] { node[] {Korean Traditional House} }  
+	      child[] { node[] {Hause made of bottles} }  
+      }
+    child[] {node[] {Atypical places}   
+    	[clockwise from=190]
+ 		  child[] { node[] {Medieval Tower} }
+      	  child[] { node[] {Islands} }  
+	      child[] { node[] {Luxury Bedouin Home} }  
+      };
+\end{tikzpicture}
+}
+\caption{Mind map: Enlist unique, attractive accommodations}
+\end{figure}
+\vspace*{\fill}
+
+%strategic objective 4
+\begin{figure}
+\centering
+\makebox[\textwidth][c]{
+\begin{tikzpicture}
+  \path[mindmap,grow cyclic, every node/.style=concept, concept color=black,text=white, 
+    level 1/.append style={concept color=blue,level distance=120,sibling angle=90},
+    level 2/.append style={concept color=green!50!black,level distance=80,sibling angle=60}]
+    
+    node[] {provide a convenient booking experience}
+    [clockwise from=45]
+		child[] {node[] {Special features}
+        	[clockwise from=100]
+        	child[] {node[] {One click booking}}
+            child[] {node[] {Streetview integration}}     
+            child[] {node[] {Own messaging system}}             
+        }     
+      	child[] {node[] {High quality visuals}
+        	[clockwise from=10]
+        	child[] {node[] {Professional photos}} 
+            child[] {node[] {Photos verifications}} 
+            child[] {node[] {Hosts photos}}             
+			}            
+		child[] {node[] {Browsing filters}
+        	[clockwise from=-70]
+        	child[] {node[] {Popularity}}
+            child[] {node[] {Friends}}     
+            child[] {node[] {Neighborhoods}}     
+            }     
+		child[] {node[] {High usability}
+        [clockwise from=180]
+        	child[] {node[] {Map-to-list connection}}
+            child[] {node[] {Use location of the user}}     
+            child[] {node[] {User-centered design}}             
+        }             
+    ;
+\end{tikzpicture}
+}
+\caption{Mind map: Provide a convenient booking experience}
+\end{figure}
+\vspace*{\fill}
+
+%strategic objective 5
+\begin{figure}
+\centering
+\makebox[\textwidth][c]{
+\begin{tikzpicture}
+  \path[mindmap,grow cyclic,every node/.style=concept, concept color=black,text=white, 
+    level 1/.append style={concept color=blue,level distance=140,sibling angle=120,},
+    level 2/.append style={concept color=green!50!black,level distance=110,sibling angle=60},]
+   
+    node[] {leading to loyal, satisfied customers}
+    [clockwise from=45]
+		child[] {node[] {Help \& Support}
+        [clockwise from=100] 
+        	child[] {node[] {24/7 support hotline}}
+        	child[] {node[] {Online Help Center}}
+        	child[] {node[] {Blog with tips and guides}}
+        }
+        child[] {node[] {Loyalty System}
+        	[clockwise from=-40]
+        	child[] {node[] {Coupons for inviting friends}}
+            child[] {node[] {Special deals \& offers by email}}
+            %child[] {node[] {...}}
+        }             
+        child[] {node[] {Reliable Service}        	
+        	[clockwise from=-130]
+            child[] {node[] {Minimize server downtime}}        
+            child[] {node[] {Track application errors}}
+            child[] {node[] {Keep web site responsive}}
+        }
+    ;
+\end{tikzpicture}
+}
+\caption{Mind map: Leading to loyal, satisfied customers}
+\end{figure}
+\vspace*{\fill}
+
+% section foundations (end)

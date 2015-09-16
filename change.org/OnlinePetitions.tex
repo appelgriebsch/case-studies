@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+% package for including graphics with figure-environment
+\usepackage{tikz}
+\usepackage{pgfgantt}
+\usetikzlibrary{mindmap,trees}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{appendix}
+\usepackage[color=yellow]{todonotes}
+\usepackage{enumitem}
+
+\usepackage[flushleft]{threeparttable}
+\usepackage{float}
+% colors for hyperlinks
+% colored borders (false) colored text (true)
+\hypersetup{colorlinks=true,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+
+% package for bibliography
+\usepackage[authoryear,round]{natbib}
+% package for header
+\usepackage[automark]{scrpage2}
+\usepackage{ntheorem}
+\newtheorem{hyp}{Hypothesis}
+\pagestyle{scrheadings}
+\ihead[]{William Clear, Andreas Gerlach, Iaroslav Popov}
+\ohead[]{\today}
+\cfoot[]{\pagemark} 
+\setheadsepline[122mm]{0.3mm}
+\begin{document}
+	\title{
+	\begin{figure}[!ht]
+		\flushleft
+			\includegraphics[width=0.7\textwidth]{assets/logo.eps}
+	\end{figure}
+	\vspace{1cm}
+	\Huge Effectiveness of Online Petitions in Driving Social Change for Environmental Protection \\
+    \large Case Study: Change.org
+	}
+	
+	\vspace{1cm}
+	
+	% if you are the only author, you might use the following
+	% \author{Name of student}	
+	
+	% Insert here your name and correct mail address
+	\author{\Large \href{mailto:william.j.clear@gmail.com}{William Clear} \and \Large \href{mailto:andreas.gerlach@smail.fh-koeln.de}{Andreas Gerlach} \and \Large \href{mailto:iaroslav.popov@gmail.com}{Iaroslav Popov}
+	\vspace{1cm}}
+	
+	% name of the course and module
+	\date{
+	\large Module: Web \& Society (Summer Term 2014) \\ Course: Web \& Society Project \\ 
+	\vspace{0.8cm}
+	\large Lecturer: Prof. Dr. Gerhard Hartmann \\
+	\vspace{1cm}
+	\today
+	}
+
+	\maketitle
+	\setlength{\parindent}{0pt}
+
+\vspace{2cm}
+
+% short abstract of the main issues
+% \input{parts/OnlinePetitions_Abstract}
+
+% TOC, List of Figures & Tables, Abbrevations, ...
+\include{TOCs}
+\input{parts/Main_Content}
+\include{parts/Appendix}
+
+% References, Attachments, ...
+\bibliographystyle{natdin}
+\bibliography{references}
+
+\end{document}

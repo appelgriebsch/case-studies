@@ -1,0 +1,86 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+% package for including graphics with figure-environment
+\usepackage{tikz}
+\usetikzlibrary{mindmap,trees}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+
+\newcommand*{\centerfloat}{%
+  \parindent \z@
+  \leftskip \z@ \@plus 1fil \@minus \textwidth
+  \rightskip\leftskip
+  \parfillskip \z@skip}
+  
+% colors for hyperlinks
+% colored borders (false) colored text (true)
+\hypersetup{colorlinks=true,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+
+% package for bibliography
+\usepackage[authoryear,round]{natbib}
+% package for header
+\usepackage[automark]{scrpage2}
+\pagestyle{scrheadings}
+\ihead[]{Andreas Gerlach, Iaroslav Popov, Oliver Weiss}
+\ohead[]{\today}
+\cfoot[]{\pagemark} 
+\setheadsepline[122mm]{0.3mm}
+\begin{document}
+	\title{
+	\begin{figure}[!ht]
+		\flushleft
+			\includegraphics[width=0.7\textwidth]{assets/logo.eps}
+	\end{figure}
+	\vspace{1cm}
+    \begin{figure}[!ht]
+    	\center
+    		\includegraphics[width=0.5\textwidth]{assets/Airbnb_Logo.png}
+    \end{figure}
+	\Huge case study
+	}
+	
+	\vspace{1cm}
+	
+	% if you are the only author, you might use the following
+	% \author{Name of student}	
+	
+	% Insert here your name and correct mail address
+	\author{\Large \href{mailto:andreas.gerlach@smail.fh-koeln.de}{Andreas Gerlach} \and \Large \href{mailto:iaroslav.popov@gmail.com}{Iaroslav Popov} \and \Large \href{mailto:oweiss@fh-koeln.de}{Oliver Weiss}
+	\vspace{1cm}}
+	
+	% name of the course and module
+	\date{
+	\large Module: Foundations and Principles II (Summer Term 2014)\\ Course: Controlling \& Performance Management \\ 
+	\vspace{0.8cm}
+	\large Lecturer: Prof. Dr. Gerhard Hartmann \\
+	\vspace{1cm}
+	\today
+	}
+
+	\maketitle
+	\setlength{\parindent}{0pt}
+
+% start with a short abstract of the purpose of the document
+\input{parts/Airbnb_Abstract}
+
+% include TOC, List of figures & tables
+\include{TOCs}
+
+% include each chapter that is stored in it's own file
+\include{parts/Airbnb_Introduction}
+\include{parts/Airbnb_Objectives}
+\include{parts/Airbnb_Methodologies}
+\include{parts/Airbnb_KPIs}
+\include{parts/Airbnb_Questionary}
+\include{parts/Airbnb_Segmentation}
+\include{parts/Airbnb_Results}
+%\include{parts/Airbnb_Conclusion}
+\include{parts/Airbnb_Workload}
+
+%include referenced bibliography items
+\include{References} 
+
+\end{document}

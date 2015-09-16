@@ -1,0 +1,59 @@
+\section{Data Capturing Methodologies} % (fold)
+\label{sec:methodologies}
+In this chapter will be a discussion about the methodologies, that can be used to capture analysable data of a web based system. We will evaluate four methodologies and decide which ones are beneficial for our purpose.
+
+
+\subsection{Web Logs} % (fold)
+\label{sub:web_logs}
+% subsection web_logs
+Web Logs contain information related to the interactions between web server and client, e.g. page name, IP address, browser and date time. On the upside these Web Logs are easy accessible, since little preparation has to be initiated. On the downside, the information value is insufficient due to the fact, that they are designed to capture technical information and partial invisibility of traffic by page caching. Nevertheless, these logs do have an indisputable advantage over other methodologies like JavaScript tags: They can be used to analyse search engine robot behaviour and therefore measure the success of our search engine optimisation efforts. This is the result of lacking JavaScript execution, when search engines crawlers visit our websites. Because this is the only information that we cannot retrieve by other more sophisticated methodologies, we constrain the usage of web logs to this purpose.\citep[p. 26-27]{Kaushik07} 
+
+\begin{description}
+   \item[Using scenarios of Web Logs]~\par
+   \begin{itemize}
+      \item Analyse activities of search engine robots to ensure, that search engines are up-to-date. This enables the possibility to control the availability of new content to the worldwide community, because 80\% of Internet traffic starts with a search engine\citep[p. 147]{Kaushik07}
+   \end{itemize}
+\end{description}
+
+
+\subsection{Web Beacons} % (fold)
+\label{sub:web_beacons}
+% subsection web_beacons
+Web Beacons are usually small transparent pictures, that are hosted by a third-party server. Every time the website is requested, the Web Beacon will be downloaded, too. The Data Collector (on the third-party server) captures information like visitors, IP address, view time, previous setted cookies (if third-party cookies are allowed) and more. Web Beacons can also be used in emails to verify, that an email had been read. This can be beneficial, because Java Script is rarely activated in email programs. But sometime images are also deactivated and therefore no request will be executed. Web Beacons cannot capture much data, but are very easy to use and can be used over multiple websites. The most common examples are to track how many people saw a banner, that is placed on multiple websites or to control, if an email had been read.\citep[p. 28-30]{Kaushik07} 
+
+\begin{description}
+   \item[Using scenarios of Web Beacons]~\par
+   \begin{itemize}
+      \item Measuring the area of influence of banner advertising by counting the amount of people, who saw the banner and clicked the banner. The latter has to be recorded by URL parameters, that identify the source page. These information can be used to rate the success of banner campaigns, that should increase the users of our international network
+      \item Web Beacons will help us to analyse how successful the email newsletter campaigns are. At least we can figure out how many people actually read the newsletter. People who read the newsletter will probably activate images to increase the reading comfort. Therefore the standard adjustment of clients to de-active images in emails should not be a problem
+   \end{itemize}
+\end{description}
+
+\subsection{JavaScript Tags} % (fold)
+\label{sub:javascript_tags}
+
+JavaScript Tags are currently the state-of-the-art method to collect an huge amount of data on the web. The main benefit of JavaScript tags is that data serving is separated from data capturing. The latter process can also be outsourced to specialized 3$^{rd}$ party vendors. It requires little effort for the business to implement JavaScript tagging as well. Most of the time it will be sufficient to just add a small amount of JavaScript code to the footer of the HTML document to enable capturing the requests.
+\citep[p. 30-33]{Kaushik07}
+\begin{description}
+	\item[Using scenarios of JavaScript Tags]~\par
+    \begin{itemize}
+   		\item JavaScript Tags are easy to use an offer a lot of functionality to track user visits. Therefore it can be assumed that this mechanism is widely used on the World-Wide Web. With the availability of 3$^{rd}$ party data collection services -- e.g. Google Analytics, the whole process of data capturing and analysing can be outsourced to such a web-based service. As a result the business can focus on it's main objectives. 
+        \item Setting up an in-house JavaScript Tagging solution might be of benefit if the business has a large amount of data already at hand -- e.g. customer or product information, that it want to be included into the data analysis on its web site.
+        \item JavaScript Tags will be best combined with another data capturing mechanism like Web Logs to  get also data about users who has JavaScript disabled in their browser or to retrieve data from special request (e.g. like download of files or redirects to other web sites).
+    \end{itemize}
+\end{description}
+% subsection javascript_tags
+
+\subsection{Packet Sniffing} % (fold)
+\label{sub:packet_sniffing}
+
+Packet Sniffing is a low-level approach to capturing data of web traffic. It works on the physical layer of the network connections. Instead of sending a request to the web server directly it will pass a packet sniffer -- either hardware or software-based, upfront. This utility will capture the raw messages that are send over the wire to the server as well as the replies from the server that goes back to the clients.
+\citep[p. 33-36]{Kaushik07}
+\begin{description}
+\item[Using scenarios of Packet Sniffing]~\par
+  \begin{itemize}
+	\item Packet Sniffing is quite complicated to set-up and use. On the other hand it gives us a lot of information that are otherwise not possible to collect. We will be using Packet Sniffing to profit from this advantages, e.g. to identify server errors, bandwidth usage and other technical data.
+  \end{itemize}
+\end{description}
+% subsection packet_sniffing
+% section methodologies (end)
