@@ -1,3 +1,4 @@
+%!TEX root = ../Airbnb_CaseStudy.tex
 \section{Data Capturing Methodologies} % (fold)
 \label{sec:methodologies}
 In this chapter will be a discussion about the methodologies, that can be used to capture analysable data of a web based system. We will evaluate four methodologies and decide which ones are beneficial for our purpose.
@@ -6,7 +7,7 @@ In this chapter will be a discussion about the methodologies, that can be used t
 \subsection{Web Logs} % (fold)
 \label{sub:web_logs}
 % subsection web_logs
-Web Logs contain information related to the interactions between web server and client, e.g. page name, IP address, browser and date time. On the upside these Web Logs are easy accessible, since little preparation has to be initiated. On the downside, the information value is insufficient due to the fact, that they are designed to capture technical information and partial invisibility of traffic by page caching. Nevertheless, these logs do have an indisputable advantage over other methodologies like JavaScript tags: They can be used to analyse search engine robot behaviour and therefore measure the success of our search engine optimisation efforts. This is the result of lacking JavaScript execution, when search engines crawlers visit our websites. Because this is the only information that we cannot retrieve by other more sophisticated methodologies, we constrain the usage of web logs to this purpose.\citep[p. 26-27]{Kaushik07} 
+Web Logs contain information related to the interactions between web server and client, e.g. page name, IP address, browser and date time. On the upside these Web Logs are easy accessible, since little preparation has to be initiated. On the downside, the information value is insufficient due to the fact, that they are designed to capture technical information and partial invisibility of traffic by page caching. Nevertheless, these logs do have an indisputable advantage over other methodologies like JavaScript tags: They can be used to analyse search engine robot behaviour and therefore measure the success of our search engine optimisation efforts. This is the result of lacking JavaScript execution, when search engines crawlers visit our websites. Because this is the only information that we cannot retrieve by other more sophisticated methodologies, we constrain the usage of web logs to this purpose.\citep[p. 26-27]{Kaushik07}
 
 \begin{description}
    \item[Using scenarios of Web Logs]~\par
@@ -19,7 +20,7 @@ Web Logs contain information related to the interactions between web server and 
 \subsection{Web Beacons} % (fold)
 \label{sub:web_beacons}
 % subsection web_beacons
-Web Beacons are usually small transparent pictures, that are hosted by a third-party server. Every time the website is requested, the Web Beacon will be downloaded, too. The Data Collector (on the third-party server) captures information like visitors, IP address, view time, previous setted cookies (if third-party cookies are allowed) and more. Web Beacons can also be used in emails to verify, that an email had been read. This can be beneficial, because Java Script is rarely activated in email programs. But sometime images are also deactivated and therefore no request will be executed. Web Beacons cannot capture much data, but are very easy to use and can be used over multiple websites. The most common examples are to track how many people saw a banner, that is placed on multiple websites or to control, if an email had been read.\citep[p. 28-30]{Kaushik07} 
+Web Beacons are usually small transparent pictures, that are hosted by a third-party server. Every time the website is requested, the Web Beacon will be downloaded, too. The Data Collector (on the third-party server) captures information like visitors, IP address, view time, previous setted cookies (if third-party cookies are allowed) and more. Web Beacons can also be used in emails to verify, that an email had been read. This can be beneficial, because Java Script is rarely activated in email programs. But sometime images are also deactivated and therefore no request will be executed. Web Beacons cannot capture much data, but are very easy to use and can be used over multiple websites. The most common examples are to track how many people saw a banner, that is placed on multiple websites or to control, if an email had been read.\citep[p. 28-30]{Kaushik07}
 
 \begin{description}
    \item[Using scenarios of Web Beacons]~\par
@@ -37,7 +38,7 @@ JavaScript Tags are currently the state-of-the-art method to collect an huge amo
 \begin{description}
 	\item[Using scenarios of JavaScript Tags]~\par
     \begin{itemize}
-   		\item JavaScript Tags are easy to use an offer a lot of functionality to track user visits. Therefore it can be assumed that this mechanism is widely used on the World-Wide Web. With the availability of 3$^{rd}$ party data collection services -- e.g. Google Analytics, the whole process of data capturing and analysing can be outsourced to such a web-based service. As a result the business can focus on it's main objectives. 
+   		\item JavaScript Tags are easy to use an offer a lot of functionality to track user visits. Therefore it can be assumed that this mechanism is widely used on the World-Wide Web. With the availability of 3$^{rd}$ party data collection services -- e.g. Google Analytics, the whole process of data capturing and analysing can be outsourced to such a web-based service. As a result the business can focus on it's main objectives.
         \item Setting up an in-house JavaScript Tagging solution might be of benefit if the business has a large amount of data already at hand -- e.g. customer or product information, that it want to be included into the data analysis on its web site.
         \item JavaScript Tags will be best combined with another data capturing mechanism like Web Logs to  get also data about users who has JavaScript disabled in their browser or to retrieve data from special request (e.g. like download of files or redirects to other web sites).
     \end{itemize}
